@@ -1,0 +1,22 @@
+<div class="container" >
+      <div class="form-check checkbox1" >
+ 
+    <input class="form-check-input" type="checkbox"  id="checkbox1" name="checkbox1" value="" [checked]="mostrar" (click)="mostrarangular()" >
+        
+        <label class="form-check-label" for="checkbox1">
+          is active
+        </label>
+      </div>
+        
+        <div class="mostrar01" *ngIf="!mostrar">
+           <p>activar el checkbox para mostrar el contenido</p>
+        </div>
+       <div class="imagen" *ngIf="mostrar" >
+       <img src="https://repository-images.githubusercontent.com/24195339/87018c00-694b-11e9-8b5f-c34826306d36" alt="" >
+       <h4>Angular es un marco de diseño de aplicaciones y una plataforma de desarrollo para crear aplicaciones de una sola página eficientes y sofisticadas.
+        <br>
+        Estos documentos de Angular lo ayudan a aprender y usar el marco y la plataforma de desarrollo de Angular, desde su primera aplicación hasta la optimización de aplicaciones complejas de una sola página para empresas. Los tutoriales y las guías incluyen ejemplos descargables para ayudarlo a comenzar sus proyectos.
+       </h4>
+      </div>
+
+</div>
